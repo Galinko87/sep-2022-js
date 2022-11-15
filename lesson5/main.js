@@ -82,7 +82,18 @@ blocks(clients);
 function findMin(...x) {
     return Math.min(...x)
 }
-console.log(findMin(1,3,5,99,-3,24,345))
+function find(...x) {
+    let start = x[0];
+    for (const x1 of x) {
+        if (x1<start){
+            start = x1;
+        }
+    }
+    return start;
+}
+
+console.log(find(3, 8, 9, 0, 554, -8, -110));
+console.log(findMin(1, 3, 5, 99, -3, 24, 345));
 //- створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 function sum() {
     let total = 0;

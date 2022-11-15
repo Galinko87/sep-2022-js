@@ -5,6 +5,7 @@
       <change afterPath="$PROJECT_DIR$/lesson3/demo.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson4/demo.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson5/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       <workItem from="1667426350374" duration="938000" />
       <workItem from="1667427452336" duration="12112000" />
       <workItem from="1667941380083" duration="3605000" />
-      <workItem from="1668077958779" duration="25278000" />
+      <workItem from="1668077958779" duration="26259000" />
     </task>
     <task id="LOCAL-00001" summary="task1 lesson 1 js">
       <created>1667318370500</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668466825465</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="homework lesson5">
+      <created>1668512863585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668512863585</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
