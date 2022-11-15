@@ -6,7 +6,7 @@ function square(a, b) {
 console.log(square(2, 3));
 //- створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 function cylindre(h, r) {
-    return (h * 3,14 * r * r);
+    return (h * 3.14 * r * r);
 }
 console.log(cylindre(2, 3));
 //- створити функцію яка приймає масив та виводить кожен його елемент
@@ -80,9 +80,9 @@ function blocks(clients) {
 blocks(clients);
 //- створити функцію яка повертає найменьше число з масиву
 function findMin(...x) {
-
+    return Math.min(...x)
 }
-findMin()
+console.log(findMin(1,3,5,99,-3,24,345))
 //- створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 function sum() {
     let total = 0;
