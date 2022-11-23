@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+/*  let str = 'hello okten';
+  console.log(str[0]);
+
+  console.log(str.toUpperCase());
+  let toUpperCase = str.toUpperCase();
+  console.log(toUpperCase);
+  console.log(str.startsWith('he'));
+  console.log(str.endsWith('en;'));
+  let substring = str.substring(0, 7);
+  console.log(substring);
+  console.log(str.charAt(7));
+  let phone = '(067)123-12-12';
+  let replaceAll1 = phone.replaceAll('(', '');
+  console.log(replaceAll1);
+  let phone2 = '(067)345-56-12';
+  let result = phone2.replaceAll('(', '')
+          .replaceAll(')','')
+          .replaceAll('-','')
+  console.log(result);
+
+  let obj = 'name:"vasya",age:32';
+  let split = obj.split(',');
+  console.log(split);
+  let tupleName = split[0];
+  let nameValue = tupleName.split(':');
+  console.log(nameValue);
+  let tupleAge = split[1];
+  let ageValue = tupleAge.split(':');
+  console.log(ageValue);
+
+/*-----------------*/
+ /* let arr = [];
+  arr[arr.length] = "aze0";
+  console.log(arr.push('aze1'));
+  console.log(arr.push('aze2'));
+  console.log(arr.push('aze3'));
+  console.log(arr.push('aze4'));
+  console.log(arr);
+  console.log(arr.pop());
+  console.log(arr.shift());
+  console.log(arr);
+  arr.unshift('sdf');
+  console.log(arr);
+
+  let join = arr.join(';');
+  console.log(join);
+
+  let nums = [1, 2, 3, 4];
+ let concat = arr.concat(nums);
+  console.log(concat);
+
+  let users = [
+      {name: "Vasya", username: "V1", password: "sdfsdfsdf"},
+      {name: "Petya", username: "sdf", password: "sdfsdfsklj"},
+      {name: "Masha", username: "Fser", password: "lur;rng"},
+      {name: "Olya", username: "SDFSDF", password: "sldfksldf"},
+      {name: "Kirya", username: "FSD5", password: "csieussf"},
+      {name: "Natasha", username: "sdfkjoo", password: "lsut34"},
+      {name: "Lena", username: "45645df", password: "SECE342"},
+      {name: "Sasha", username: "Vsdiu", password: "DGDTH87"},
+      {name: "Marusia", username: "STRE21", password: "kshd5667"},
+      {name: "Elina", username: "LSJDF0", password: "ksdfnsd2434"},
+
+  ];
+  let splice = users.splice(0, 2, '&&&');
+  console.log(splice);
+  console.log(users);
+
+  let arr2 = [11, 22, 33, 44, 55, 66];
+  let numbers = arr2.reverse();
+  console.log(numbers);
+  arr2.includes(11); //true
+
+  let striiing = " asd  ";
+  console.log(striiing.length);
+  let s = striiing.trim();
+  console.log(s);
+  console.log(s.length);*/
+
+let clients = [{id:1, name: "vasya", age: 21},
+    {id:2, name: "petya", age: 22},
+    {id:3, name: "olya", age: 28},
+    {id:4, name: "misya", age: 23},
+    {id:5, name: "kisya", age: 24}]
+
+function wtfIsThisFunction(client) {
+    console.log(client);
+}
+
+clients.forEach(wtfIsThisFunction);
+
+clients.forEach(function (x) {
+    console.log(x);
+
+});
+clients.forEach((value) => console.log(value)); // just iteration
+
+let arr2 = [] // filtering
+for (const client of clients){
+    if (client.age > 22){
+        arr2.push(client);
+    }
+}
+console.log(arr2);
+
+let filter = clients.filter(function (client){
+    return client.age > 22;
+})
+console.log(filter);
+
+clients.map((client) => ({name: client.name, age: client.age}));
+clients.filter(value => value.id % 2 === 0);
+clients.forEach(value => console.log(value));
+
+clients.sort((client1, client2) => client1.age - client2.age);
+console.log(clients);
+
+console.log(clients.sort(function (a, b) {
+    if (a.name < b.name) {
+        return -1;
+    }
+    if (a.name > b.name) {
+        return 1;
+    }
+    if (a.name === b.name) {
+        return 0
+    }
+}));
+
+let reduce = clients.reduce((accumulator, client) => {
+    accumulator.ids.push(client.id);
+    accumulator.names.push(client.name);
+    accumulator.ages.push(client.age);
+    return accumulator;
+
+
+}, {names: [], ages: [], ids: []});
+console.log(reduce);
+
+
+</script>
+</body>
+</html>
