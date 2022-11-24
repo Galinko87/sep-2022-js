@@ -68,8 +68,8 @@ let coursesAndDurationArray = [
     {title: 'QA Complex', monthDuration: 4},
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}]
-let Duration = coursesAndDurationArray.sort((a,b) =>(b.monthDuration - a.monthDuration));
-console.log(Duration);
+let duration = coursesAndDurationArray.sort((a,b) =>(b.monthDuration - a.monthDuration));
+console.log(duration);
 let longDuration = coursesAndDurationArray.filter((course) => course.monthDuration > 5);
 console.log(longDuration);
 
@@ -116,7 +116,7 @@ console.log(red);
 let diamonds = cards.filter(value => value.cardSuit === 'diamond');
 console.log(diamonds);
 //- всі трефи від 9 та більше
-let clubs = cards.filter(value => value.cardSuit === 'clubs' && value.value >= 9);
+let clubs = cards.filter(value => (value.cardSuit === 'clubs' && value.value >= 9) || (value.cardSuit === 'clubs' && typeof value.value === 'string'));
 console.log(clubs);
 /*
 Додатково по reduce
