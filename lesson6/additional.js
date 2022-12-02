@@ -176,14 +176,32 @@ console.log(duration);
 /*
 - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
     let symb = "о", str = "Астрономия это наука о небесных объектах";
-document.writeln(count(str, symb)) // 5
+document.writeln(count(str, symb)) // 5*/
+let symb = "о";
+let str2 = "Астрономия это наука о небесных объектах";
+count = (str2, symb) => {
+    let num = 0;
+    let split = str2.split('');
+    for (const splitElement of split) {
+        if (splitElement === symb){
+            num++;
+    }
+}
+    return num;
+}
+console.log(count(str2, symb));
 
-- Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
-    let str = "Сила тяжести приложена к центру масс тела";
-document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
 
+// Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
+    let str3 = "Сила тяжести приложена к центру масс тела";
+cutString = (str3, n) => str3.split(' ').splice(0, n).join(' ');
 
--стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+console.log(cutString(str3, 5));
+
+// 'Сила тяжести приложена к центру'
+
+/*
+- стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 -знайти наібльшу книжку.
 - знайти книжку/ки з найбільшою кількістю жанрів
 - знайти книжку/ки з найдовшою назвою
