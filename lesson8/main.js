@@ -181,11 +181,11 @@ class Prince {
 let prince1 = new Prince('Tolik', 38, 39);
 let findGirl = (array, prince) => {
     for (const item of array) {
-            if (girls.footSize === prince.size){
-                console.log(`${Prince.name} is a perfect match for ${girls.name}`);
+            if (item.footSize === prince.size){
+                console.log(`${prince.name} is a perfect match for ${item.name}`);
             }
         }
 
 
     }
-findGirl(prince1, girls);
+findGirl(girls, prince1);
