@@ -209,3 +209,21 @@ console.log(cutString(str3, 5));
 - знайти книжку/ки які писав 1 автор
 - вісортувати книжки по кількості сторінок по зростанню
 */
+
+// 4356 --> '4000 + 300+ 50+ 6'
+const  number = (number) =>{
+    const arr = [];
+    let index = 0;
+    while(number){
+        let i = number % 10 * 10 ** index++;
+        arr.unshift((i)); // adds number at the beginning of array
+        number /= 10;
+        number = parseInt(number);
+
+        if (i === 0){
+            arr.shift(); // deletes the element at the beginning of array
+        }
+    }
+    return arr.join('+');
+}
+console.log(number(30303));;
