@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+fetch('https://jsonplaceholder.typicode.com/users') // тут я роблю запит на сервер
+        .then(response => response.json()) // тут отримую інфу в обєкт та відкриваю і потім отримую json data from object
+        .then(data => {
+          for (const user of data) {
+            console.log(user);
+          }
+        }); // працюю вже з данними
+
+</script>
+</body>
+</html>
