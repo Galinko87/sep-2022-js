@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello</h1>
+<form name="f1">
+  <input type="text" name="main">
+
+</form>
+<div>
+lorem ipsum
+  <div>sdfsdlkfjs dfsld f</div>
+</div>
+<ul>
+
+  <li>data 1</li>
+  <li>data 2</li>
+  <li>data 3</li>
+  <li>data 4</li>
+  <li>data 5</li>
+</ul>
+
+<script>
+ /* function explorer(htmlElement){
+    console.log(htmlElement);
+    let children = htmlElement.children;
+    if (children.length != 0){
+      for (const child of children) {
+        explorer(child);
+
+      }
+    }
+  }
+
+  explorer(document.body)*/
+
+ let tree = {
+   name: "sdfsd",
+   age: 32,
+   wife: {
+     name: 'sdfsd'
+   }
+ }
+
+ function treeBuilder(obj){
+   for (const objKey in obj) {
+     if (typeof obj[objKey] != 'object') {
+       let div = document.createElement('div')
+       div.innerText = obj[objKey];
+       document.body.append(div);
+     }
+     if (typeof obj[objKey] === 'object'){
+       treeBuilder(obj[objKey])
+     }
+   }
+ }
+
+ treeBuilder(tree);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// local storage
+
+let ul = document.createElement('ul');
+document.body.appendChild(ul);
+
+/*let visits = localStorage.getItem('visits');
+console.log(visits);
+if (!visits){
+  visits = [];
+  localStorage.setItem('visits', JSON.stringify(visits))
+}*/
+
+let visits = localStorage.getItem('visits') || JSON.stringify([]); //подивилися чи є і добавили в масив (в якості стрінги) якщо нема
+
+let arrayOfVisits = JSON.parse(localStorage.getItem('visits'));
+arrayOfVisits.push(new Date());
+localStorage.setItem('visits', JSON.stringify(arrayOfVisits));
+for (const visitItem of arrayOfVisits) {
+    let li = document.createElement('li');
+    li.innerText = visitItem;
+    ul.append(li)
+}
+//localStorage.getItem('visits')
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7171e66-3a5c-4edf-aeef-8e97b920ce46" name="Changes" comment="lesson 9">
-      <change afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson10/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson10/main1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson10/userInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson10/users.html" afterDir="false" />
+    <list default="true" id="c7171e66-3a5c-4edf-aeef-8e97b920ce46" name="Changes" comment="lesson 10">
+      <change afterPath="$PROJECT_DIR$/consultation 161222/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/recursion/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
       <workItem from="1670444081661" duration="8311000" />
       <workItem from="1670506606329" duration="3926000" />
       <workItem from="1670791952776" duration="22750000" />
-      <workItem from="1671380553189" duration="5497000" />
+      <workItem from="1671380553189" duration="11392000" />
     </task>
     <task id="LOCAL-00001" summary="task1 lesson 1 js">
       <created>1667318370500</created>
@@ -200,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671210046922</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lesson 10">
+      <created>1671396696144</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671396696144</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +235,7 @@
     <MESSAGE value="additional lesson 6" />
     <MESSAGE value="lesson 8" />
     <MESSAGE value="lesson 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 9" />
+    <MESSAGE value="lesson 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 10" />
   </component>
 </project>
